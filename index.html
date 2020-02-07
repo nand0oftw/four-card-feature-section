@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Four card feature section</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    body {
+      font-size: 16px;
+      font-family: 'Poppins', sans-serif;
+      color: #a9a8ad;      
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: 1440px;
+      padding: 3rem;
+      box-sizing: border-box;
+      width: 100%;
+      margin: 5rem;
+      box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .container-content {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .column {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin: 0 1rem;
+    }
+
+    .row {
+      margin: 1rem 0;
+    }
+
+    .card-error {
+      border-top: 0.25rem solid #ec5356;
+    }
+
+    .card-success {
+      border-top: 0.25rem solid #40d5d3;
+    }
+
+    .card-warning {
+      border-top: 0.25rem solid #fcae4a;
+    }
+
+    .card-info {
+      border-top: 0.25rem solid #559cee;
+    }
+
+    .card {
+      width: 350px;
+      box-sizing: border-box;
+      padding: 1rem;
+      border-radius: 0.25rem;
+      box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    .card-title {
+      color: #494c5b;
+      font-size: 1rem;
+    }
+
+    .card-header+.card-content,
+    .card-content+.card-footer {
+      margin-top: 1rem;
+    }
+
+    .card-content {
+      color: #a9a9ab;
+      font-size: 0.75rem;
+    }
+
+    .card-footer {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+
+    .container-heading {
+      font-size: 2rem;
+      font-weight: 300;
+      color: #505163;
+    }
+
+
+    .container-subheading {
+      color: #505163;
+      font-size: 1.875rem;
+      font-weight: 700;
+      margin-bottom: 2rem; 
+    }
+
+    .container-content {
+      margin-top: 1.5rem;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <div class="container-heading">
+      Reliable, efficient delivery
+    </div>
+    <div class="container-subheading">
+      Powered by Technology
+    </div>
+    Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successful
+
+    <div class="container-content">
+      <div class="column">
+        <div class="row card card-success">
+          <div class="card-header">
+            <div class="card-title">
+              Supervisor
+            </div>
+          </div>
+          <div class="card-content">
+            Monitors activity to identify project roadblocks
+          </div>
+          <div class="card-footer">
+            <img src="images/icon-supervisor.svg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="row card card-error">
+          <div class="card-header">
+            <div class="card-title">
+              Team Builder
+            </div>
+          </div>
+          <div class="card-content">
+            Scans our talent network to create the optimal team for your project
+          </div>
+          <div class="card-footer">
+            <img src="images/icon-team-builder.svg" alt="" />
+          </div>
+        </div>
+
+        <div class="row card card-warning">
+          <div class="card-header">
+            <div class="card-title">
+              Karma
+            </div>
+          </div>
+          <div class="card-content">
+            Regularly evaluates our talent to ensure quality
+          </div>
+          <div class="card-footer">
+            <img src="images/icon-karma.svg" alt="" />
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="row card card-info">
+          <div class="card-header">
+            <div class="card-title">
+              Calculator
+            </div>
+          </div>
+          <div class="card-content">
+            Uses data from past projects to provide better delivery estimates
+          </div>
+          <div class="card-footer">
+            <img src="images/icon-calculator.svg" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by
+      <a href="#">Your Name Here</a>.
+    </p>
+  </footer>
+</body>
+
+</html>
